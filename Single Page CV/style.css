@@ -37,3 +37,7 @@ p, h1, h2, h3 {
 p {
     font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+}
