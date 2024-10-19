@@ -1,6 +1,6 @@
-let saldo1 = localStorage.getItem('tsaldo') ? parseFloat(localStorage.getItem('tsaldo')) : 0;
-let resposta2 = document.getElementById('res2');
-let resposta3 = document.getElementById('res1');
+let saldo1 = localStorage.getItem('tsaldo') ? parseFloat(localStorage.getItem('tsaldo')) : 0
+let resposta2 = document.getElementById('res2')
+let resposta3 = document.getElementById('res1')
 
 let products = {
     Água: 8.99,
@@ -13,61 +13,61 @@ let products = {
     GarrafaRedLabel: 150.00,
     GarrafaVinho: 25.50,
     CopoCerveja: 5.50
-};
+}
 
 function atualizarSaldoTextos() {
-    resposta3.innerText = `Seu saldo: R$${saldo1.toFixed(2)}`;
+    resposta3.innerText = `Seu saldo: R$${saldo1.toFixed(2)}`
 }
 
 function comprarProduto(produto) {
     if (saldo1 >= products[produto]) {
-        saldo1 -= products[produto];
-        localStorage.setItem('tsaldo', saldo1);
-        resposta2.innerText = `Você comprou uma ${produto.replace(/([A-Z])/g, ' $1')}!`;
-        atualizarSaldoTextos();
+        saldo1 -= products[produto]
+        localStorage.setItem('tsaldo', saldo1)
+        resposta2.innerText = `Você comprou uma ${produto.replace(/([A-Z])/g, ' $1')}!`
+        atualizarSaldoTextos()
     } else {
-        resposta2.innerText = `Saldo insuficiente! Seu saldo atual é: R$${saldo1.toFixed(2)}`;
+        resposta2.innerText = `Saldo insuficiente! Seu saldo atual é: R$${saldo1.toFixed(2)}`
     }
 }
 
 function comprarAgua() {
-    comprarProduto('Água');
+    comprarProduto('Água')
 }
 
 function comprarCoca() {
-    comprarProduto('GarrafaCoca');
+    comprarProduto('GarrafaCoca')
 }
 
 function comprarCocaKs() {
-    comprarProduto('CocaKs');
+    comprarProduto('CocaKs')
 }
 
 function comprarCocaLata() {
-    comprarProduto('CocaLata');
+    comprarProduto('CocaLata')
 }
 
 function comprarPepsiLata() {
-    comprarProduto('PepsiLata');
+    comprarProduto('PepsiLata')
 }
 
 function comprarSucoLaranja() {
-    comprarProduto('SucoLaranja');
+    comprarProduto('SucoLaranja')
 }
 
 function comprarUisque() {
-    comprarProduto('GarrafaUisque');
+    comprarProduto('GarrafaUisque')
 }
 
 function comprarRedLabel() {
-    comprarProduto('GarrafaRedLabel');
+    comprarProduto('GarrafaRedLabel')
 }
 
 function comprarVinho() {
-    comprarProduto('GarrafaVinho');
+    comprarProduto('GarrafaVinho')
 }
 
 function comprarCerveja() {
-    comprarProduto('CopoCerveja');
+    comprarProduto('CopoCerveja')
 }
 
-atualizarSaldoTextos();
+atualizarSaldoTextos()

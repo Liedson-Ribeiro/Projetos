@@ -22,25 +22,25 @@ function entrar() {
     } else if (tsaldo.value === '') { 
         alert('Por favor, preencha o saldo corretamente!')
     } else {
-        let saldo = Number(tsaldo.value);
+        let saldo = Number(tsaldo.value)
         if (isNaN(saldo)) {
-            alert('Por favor, insira um valor numérico válido para o saldo!');
-            return;
+            alert('Por favor, insira um valor numérico válido para o saldo!')
+            return
         }
         if (saldo < 200) {
             alert('Você não possui saldo suficiente para entrar na balada!')
         // Ações :D
         } else {
             resposta.innerHTML = `Olá, <strong>${tnome.value}</strong>, seja bem-vindo(a) à balada!`
-            saldo -= 200;
-            tsaldo.value = saldo;
+            saldo -= 200
+            tsaldo.value = saldo
             resposta.innerHTML += `<br>Saldo atual: R$${saldo.toFixed(2)}`
         }
         if (saldo) {
             entrada.style.backgroundColor = 'red'
             entrada.innerText = 'Bebidas'
-            localStorage.setItem('tsaldo', saldo);
-            tentativa = true;
+            localStorage.setItem('tsaldo', saldo)
+            tentativa = true
         }
     }
 }
