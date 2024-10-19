@@ -1,0 +1,45 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 2px black;
+    width: 50vw;
+    height: auto;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    width: 18%;
+    box-sizing: border-box;
+}
+
+.garrafa-agua, .garrafa-coca, .garrafa-coca-ks, .lata-coca, .lata-pepsi, .suco-laranja, .garrafa-uisque, .garrafa-red-label, .garrafa-vinho, .copo-cerveja {
+    width: 70px;
+    height: 70px;
+}
+
+.label-garrafa-agua, .label-garrafa-coca, .label-garrafa-coca-ks, .label-lata-coca, .label-lata-pepsi, .label-suco-laranja, .label-garrafa-uisque, .label-garrafa-red-label, .label-garrafa-vinho, .label-copo-cerveja {
+    margin-top: 5px;
+}
+
+.comprarGarrafaAgua, .comprarGarrafaCoca, .comprarGarrafaCocaKs, .comprarCocaLata, .comprarPepsiLata, .comprarSucoLaranja, .comprarGarrafaUisque, .comprarGarrafaRedLabel, .comprarGarrafaVinho, .comprarCopoCerveja {
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.comprarGarrafaAgua:hover, .comprarGarrafaCoca:hover, .comprarGarrafaCocaKs:hover, .comprarCocaLata:hover, .comprarPepsiLata:hover, .comprarSucoLaranja:hover, .comprarGarrafaUisque:hover, .comprarGarrafaRedLabel:hover, .comprarGarrafaVinho:hover, .comprarCopoCerveja:hover {
+    background-color: #4CAF50;
+}
+
+.res2 {
+    margin-top: 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bebidas.css">
+    <link rel="stylesheet" href="../CSS/produtos.css">
+    <title>Bebidas</title>
+</head>
+<body>
+    <header>
+        <h1>Bebidas da Balada</h1>
+    </header>
+    <main>
+        <div class="infos">
+            <div id="res1" class="res1"></div>
+            <div class="products">
+            <!-- Garrafa de Água -->
+                <div class="item">
+                    <img class="garrafa-agua" src="../img/garrafa-agua.png" alt="Garrafa de Água">
+                    <label class="label-garrafa-agua" id="precoAgua" for="#">R$8,99</label>
+                    <button class="comprarGarrafaAgua" name="comprarGarrafaAgua" id="comprarGarrafaAgua" onclick="comprarAgua()" >Comprar</button>
+                </div>
+                <!-- Garrafa Coca -->
+                <div class="item">
+                    <img class="garrafa-coca" src="../img/garrafa-coca.png" alt="Garrafa de Coca">
+                    <label class="label-garrafa-coca" for="#">R$12,99</label>
+                    <button class="comprarGarrafaCoca" name="comprarGarrafaCoca" id="comprarGarrafaCoca" onclick="comprarCoca()">Comprar</button>
+                </div>
+                <!-- Garrafa Coca KS -->
+                <div class="item">
+                    <img class="garrafa-coca-ks" src="../img/garrafa-coca-ks.png" alt="Garrafa de Coca KS">
+                    <label class="label-garrafa-coca-ks" for="#">R$7,50</label>
+                    <button class="comprarGarrafaCocaKs" name="comprarGarrafaCocaKs" id="comprarGarrafaCocaKs" onclick="comprarCocaKs()">Comprar</button>
+                </div>
+                <!-- Coca Lata-->
+                <div class="item">
+                    <img class="lata-coca" src="../img/lata-coca.png" alt="Lata de Coca">
+                    <label class="label-lata-coca" for="#">R$5,99</label>
+                    <button class="comprarCocaLata" name="comprarCocaLata" id="comprarCocaLata" onclick="comprarCocaLata()">Comprar</button>
+                </div>
+                <!-- Pepsi Lata-->
+                <div class="item">
+                    <img class="lata-pepsi" src="../img/lata-pepsi.png" alt="Lata de Pepsi">
+                    <label class="label-lata-pepsi" for="#">R$4,99</label>
+                    <button class="comprarPepsiLata" name="comprarPepsiLata" id="comprarPepsiLata" onclick="comprarPepsiLata()">Comprar</button>
+                </div>
+
+                <!-- Suco de Laranja -->
+                <div class="item">
+                    <img class="suco-laranja" src="../img/suco-de-laranja.png" alt="Suco de Laranja">
+                    <label class="label-suco-laranja" for="#">R$6,80</label>
+                    <button class="comprarSucoLaranja" name="comprarSucoLaranja" id="comprarSucoLaranja" onclick="comprarSucoLaranja()">Comprar</button>
+                </div>
+                <!-- Garrafa Uisque  -->
+                <div class="item">
+                    <img class="garrafa-uisque" src="../img/garrafa-uisque.png" alt="Garrafa de Uisque">
+                    <label class="label-garrafa-uisque" for="#">R$65,90</label>
+                    <button class="comprarGarrafaUisque" name="comprarGarrafaUisque" id="comprarGarrafaUisque" onclick="comprarUisque()">Comprar</button>
+                </div>
+                <!-- Garrafa Red Label  -->
+                <div class="item">
+                    <img class="garrafa-red-label" src="../img/garrafa-red-label.png" alt="Garrafa de Red Label">
+                    <label class="label-garrafa-red-label" for="#">R$150,00</label>
+                    <button class="comprarGarrafaRedLabel" name="comprarGarrafaRedLabel" id="comprarGarrafaRedLabel" onclick="comprarRedLabel()">Comprar</button>
+                </div>
+                <!-- Garrafa de Vinho  -->
+                <div class="item">
+                    <img class="garrafa-vinho" src="../img/garrafa-vinho.png" alt="Garrafa de Vinho">
+                    <label class="label-garrafa-vinho" for="#">R$25,50</label>
+                    <button class="comprarGarrafaVinho" name="comprarGarrafaVinho" id="comprarGarrafaVinho" onclick="comprarVinho()">Comprar</button>
+                </div>
+                <!-- Copo Cerveja  -->
+                <div class="item">
+                    <img class="copo-cerveja" src="../img/copo-cerveja.png" alt="Copo de Cerveja">
+                    <label class="label-copo-cerveja" for="#">R$5,50</label>
+                    <button class="comprarCopoCerveja" name="comprarCopoCerveja" id="comprarCopoCerveja" onclick="comprarCerveja()">Comprar</button>
+                </div>
+            </div>
+            <div id="res2" class="res2"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Desenvolvido por: Liedson</p>
+    </footer>
+    <script src="../JS/bebidas.js"></script>
+</body>
+<script src="../JS/comprar.js"></script>
+<script src="../JS/entrada.js"></script>
+</html>
